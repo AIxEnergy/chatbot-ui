@@ -12,10 +12,10 @@ import { ReactNode } from "react"
 import "./globals.css"
 
 const inter = Inter({ subsets: ["latin"] })
-const APP_NAME = "Chatbot UI"
-const APP_DEFAULT_TITLE = "Chatbot UI"
-const APP_TITLE_TEMPLATE = "%s - Chatbot UI"
-const APP_DESCRIPTION = "Chabot UI PWA!"
+const APP_NAME = "AIxEnergy Consultant"
+const APP_DEFAULT_TITLE = "AIxEnergy Consultant"
+const APP_TITLE_TEMPLATE = "%s - AIxEnergy Consultant"
+const APP_DESCRIPTION = "AIxEnergy Consultant"
 
 interface RootLayoutProps {
   children: ReactNode
@@ -25,6 +25,7 @@ interface RootLayoutProps {
 }
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://consultant.aixenergy.io"),
   applicationName: APP_NAME,
   title: {
     default: APP_DEFAULT_TITLE,
